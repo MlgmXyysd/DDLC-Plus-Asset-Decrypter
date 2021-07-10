@@ -36,5 +36,12 @@ Unpacked it using AssetStudio, everything worked fine and I got the wallpaper an
 
 There is a saying in Chinese called "暴力出奇迹". Great discoveries require bold guesses, and often they work, and often they work :)
 
+## Why do I use PHP
+Simply, I hate Python syntax.
+
+As an interpretive language, PHP has a friendly syntax similar to that of other languages and is easy to use.
+
+In addition, ~~PHP is the best language in the world and does not accept any refutation~~. LMAO
+
 ## License
 The project is open source under [Apache License v2.0](LICENSE). All rights reserved for script author [MlgmXyysd](https://github.com/MlgmXyysd/).
