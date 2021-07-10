@@ -35,3 +35,6 @@ Fortunately, the UnityFS file header and the Unity3D engine version were success
 Unpacked it using AssetStudio, everything worked fine and I got the wallpaper and music I wanted.
 
 There is a saying in Chinese called "暴力出奇迹". Great discoveries require bold guesses, and often they work, and often they work :)
+
+## License
+The project is open source under [Apache License v2.0](LICENSE). All rights reserved for script author [MlgmXyysd](https://github.com/MlgmXyysd/).
