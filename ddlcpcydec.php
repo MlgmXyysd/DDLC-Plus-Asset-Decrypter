@@ -4,6 +4,9 @@
  * 
  * Used to decrypt encrypted Streaming Asset Bundle files (*.cy) in DDLC-Plus.
  * 
+ * Apache License v2.0
+ * https://github.com/MlgmXyysd/DDLC-Plus-Asset-Decrypter
+ * 
  * @author MlgmXyysd
  * @version 1.1
  */
@@ -16,13 +19,14 @@ $cache_capacity = 10 * 1024 * 1024; // 10485760 for 10MB
 print("\033[32m**************************************************\033[0m\n");
 print("\033[32m* Doki Doki Literature Club Plus Asset Decrypter *\033[0m\n");
 print("\033[32m* By MlgmXyysd                                   *\033[0m\n");
+print("\033[32m* github.com/MlgmXyysd/DDLC-Plus-Asset-Decrypter *\033[0m\n");
 print("\033[32m**************************************************\033[0m\n");
 print("- Version " . $ver . "\n");
 
 if ($argc >= 2) {
 	$argument_file_in = $argv[1];
 	if (substr($argument_file_in, -3) !== ".cy") {
-		exit("! \033[31mUsage: ddlcpcydec.php <asset file *.cy> [output file]\033[0m\n");
+		exit("! \033[31mOnly supports files with .cy extension.\033[0m\n");
 	}
 	if ($argc >= 3) {
 		$argument_file_out = $argv[2];
@@ -49,8 +53,8 @@ function xor_string($str, $key = 40) {
 	return $result;
 }
 
-$file_in = fopen($argument_file_in, "r") or exit("! \033[33mUnable to open in file!\033[0m\n");
-$file_out = fopen($argument_file_out, "a") or exit("! \033[33mUnable to open out file!\033[0m\n");
+$file_in = fopen($argument_file_in, "r") or exit("! \033[31mUnable to open in file!\033[0m\n");
+$file_out = fopen($argument_file_out, "a") or exit("! \033[31mUnable to open out file!\033[0m\n");
 
 print("- Loading encrypted file " . $argument_file_in . "...\n");
 print("- File size: " . filesize($argument_file_in) . " Bytes.\n");
