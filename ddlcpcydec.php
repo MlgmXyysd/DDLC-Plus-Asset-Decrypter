@@ -24,6 +24,9 @@
  * 
  * Used to decrypt encrypted Streaming Asset Bundle files (*.cy) in DDLC-Plus.
  * 
+ * Environment requirement:
+ *   - PHP
+ * 
  * @author MlgmXyysd
  * @version 1.1
  * 
